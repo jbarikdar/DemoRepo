@@ -45,4 +45,12 @@ public class HWTest {
 		//driver.quit();
 
 	}
+	public void oldNavy() {
+		System.setProperty("webdriver.chrome.driver","C:\\Users\\manna\\Documents\\JavaLibrary\\chromedriver.exe");
+		ChromeDriver driver = new ChromeDriver();
+
+		driver.get("https://www.oldnavy.com");
+		System.out.println(driver.getTitle() + " " + driver.getCurrentUrl());
+		
+	}
 }
